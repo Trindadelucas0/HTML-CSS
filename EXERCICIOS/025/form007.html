@@ -9,8 +9,34 @@
     <h1>Exemplo de formulario</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
 
-        
+        <p>
+            <label for="iest">ESTADO</label>
+            <select name="ESTADO" id="iest">
+                <optgroup label="Região sudeste">
+                    <option value="" selected>-----Escolha-----</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+                <optgroup label="Região do carai">
+                    <option value="PQP">Puta que o pariu</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="Prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="adm">administração</option>
+                <option value="cont">CONTADOR</option>
+                <option value="TRABALHA EM DOBRO = TI">TRABALHA EM DOBRO = TI</option>
+            </datalist>
 
+        </p>
+        <p>
+            <label for="imsg">MENSAGEM</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
         <p>
             <input type="submit" value="ENVIAR">
             <input type="reset" value="Limpar">
