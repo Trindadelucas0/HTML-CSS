@@ -1,5 +1,9 @@
 @charset "UTF-8";
-
+@media screen and (min-width:600px) {
+    body{
+       background-color: chocolate;
+    }
+}
 
 @media screen and (min-width:768px){
     i#burguer{
@@ -16,8 +20,6 @@
     main{
         width: 798px;
     }
-    body{
-        background-color: brown;
-    }
+   
 }
     
